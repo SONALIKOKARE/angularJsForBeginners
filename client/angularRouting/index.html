@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="singlePageApp">
+  <head>
+    <title>Angular Js Routing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/controller.js"></script>
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" ng-controller="spaController">
+      <div>{{message}}</div>
+      <div>
+            <nav>
+                <ul>
+                    <li><a href="#/">Home</a>
+                    </li>
+                    <li><a href="#/about">About us</a>
+                    </li>
+                    <li><a href="#/contact">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <br/>
+        <div ng-view>
+          <!--
+             This DIV loads templates depending upon route.
+          -->
+        </div>
+    </div>
+  </body>
+</html>

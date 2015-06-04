@@ -19,8 +19,10 @@ var express = require('express');
 var router = express();
 var server = http.createServer(router);
 var io = socketio.listen(server);
+var currentDir = '/angularRouting';
+//var currentDir = '/angularExpression';
 
-router.use(express.static(path.resolve(__dirname, 'client')));
+router.use(express.static(path.resolve(__dirname, 'client'+currentDir)));
 var messages = [];
 var sockets = [];
 
