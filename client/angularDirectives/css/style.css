@@ -1,0 +1,22 @@
+.mainContainer{
+	width:50%;
+	height:600px;
+	margin:0 auto;
+	background: #c9c9ca;
+	border:1px solid red;
+}
+.tabContainer{
+	width:100%;
+	margin:0 auto;
+	background: #c9c9ca;
+	border:1px solid red;
+}
+.tabContainer li{
+	display:inline-block;
+	width:20%;
+	margin:1%;
+	border:1px solid red;
+}
+.active{
+	background-color: #FF0;
+}
